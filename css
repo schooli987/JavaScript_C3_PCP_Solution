@@ -1,0 +1,114 @@
+* {
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #f4f6f8;
+}
+
+/* APP CONTAINER */
+.app-container {
+  display: flex;
+  height: 100vh;
+}
+
+/* LEFT PANEL */
+.left-panel {
+  width: 30%;
+  background: #ffffff;
+  padding: 30px;
+  border-right: 1px solid #ddd;
+}
+
+.left-panel h2 {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-top: 15px;
+  font-weight: 600;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+button {
+  margin-top: 20px;
+  padding: 12px;
+  width: 100%;
+  background: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 6px;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+/* RIGHT PANEL */
+.right-panel {
+  width: 70%;
+  display: flex;
+  padding: 20px;
+  gap: 20px;
+}
+
+/* COLUMNS */
+.column {
+  flex: 1;
+  border-radius: 8px;
+  padding: 10px;
+  background: #fff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.column-header {
+  font-weight: bold;
+  padding: 10px;
+  text-align: center;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  background: #3498db;
+  color: white;
+}
+
+/* ITEM PILL */
+.item-pill {
+  background: white;
+  border-radius: 20px;
+  padding: 12px;
+  margin-bottom: 10px;
+  cursor: grab;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.2s ease;
+}
+
+.item-pill.important {
+  background: #ffeaa7;
+  border-left: 4px solid #fdcb6e;
+}
+
+.toggle {
+  cursor: pointer;
+}
+
+.dragging {
+  opacity: 0.5;
+  transform: rotate(1deg);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
