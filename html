@@ -1,0 +1,35 @@
+<div class="app-container">
+  <!-- LEFT PANEL: Form -->
+  <div class="left-panel">
+    <h2>Shopping List Organizer</h2>
+    <form id="itemForm">
+      <label for="itemInput">Item Name</label>
+      <input type="text" id="itemInput" placeholder="Enter item" required />
+
+      <label for="categoryInput">Category</label>
+      <select id="categoryInput">
+        <option value="grocery">Grocery</option>
+        <option value="electronics">Electronics</option>
+        <option value="household">Household</option>
+      </select>
+
+      <button type="submit">Add Item</button>
+    </form>
+  </div>
+
+  <!-- RIGHT PANEL: Columns -->
+  <div class="right-panel">
+    <div class="column grocery">
+      <div class="column-header">Grocery (<span class="count">0</span>)</div>
+      <div class="item-list"></div>
+    </div>
+    <div class="column electronics">
+      <div class="column-header">Electronics (<span class="count">0</span>)</div>
+      <div class="item-list"></div>
+    </div>
+    <div class="column household">
+      <div class="column-header">Household (<span class="count">0</span>)</div>
+      <div class="item-list"></div>
+    </div>
+  </div>
+</div>
